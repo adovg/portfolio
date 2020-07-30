@@ -52,7 +52,18 @@ body {
   clip: rect(0,0,0,0);
   overflow: hidden;
 }
+// preload
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
 
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
 @import 'bloks/header.scss';
 @import 'bloks/welcome.scss';
 @import 'bloks/project-section';

@@ -17,7 +17,18 @@
 </head>
 
 <body>
-
+  <script>
+    window.onload = function () {
+	console.log('dom ready!');
+  };
+  
+  if (window.onload) {
+	let preloaderEl = document.getElementById('preloader');
+	preloaderEl =  preloaderEl.classList.toggle('hidden');
+  }
+  
+  </script>
+  <div id="preloader" class="visible"></div>
 
     <div class="container">
 

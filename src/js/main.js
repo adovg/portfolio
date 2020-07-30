@@ -1,3 +1,12 @@
+// window.onload = function () {
+// 	console.log('dom ready!');
+//   };
+  
+//   if (window.onload) {
+// 	let preloaderEl = document.getElementById('preloader');
+// 	preloaderEl =  preloaderEl.classList.toggle('hidden');
+//   }
+  
 
 $(document).ready(function () {
 	console.log('document ready');
@@ -119,3 +128,4 @@ var TxtRotate = function(el, toRotate, period) {
 	css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
 	document.body.appendChild(css);
   };
+
