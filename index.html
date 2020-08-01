@@ -17,17 +17,23 @@
 </head>
 
 <body>
-  <script>
-    window.onload = function () {
+
+  <!-- <script>
+ window.onload = function () {
 	console.log('dom ready!');
   };
   
   if (window.onload) {
-	let preloaderEl = document.getElementById('preloader');
+	let delay = () => {
+	   let preloaderEl = document.getElementById('preloader');
 	preloaderEl =  preloaderEl.classList.toggle('hidden');
+	};
+	// let preloaderEl = document.getElementById('preloader');
+	// preloaderEl =  preloaderEl.classList.toggle('hidden');
+	setTimeout(delay, 1000);
   }
-  
-  </script>
+</script> -->
+
   <div id="preloader" class="visible"></div>
 
     <div class="container">
