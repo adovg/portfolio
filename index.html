@@ -18,22 +18,6 @@
 
 <body>
 
-  <!-- <script>
- window.onload = function () {
-	console.log('dom ready!');
-  };
-  
-  if (window.onload) {
-	let delay = () => {
-	   let preloaderEl = document.getElementById('preloader');
-	preloaderEl =  preloaderEl.classList.toggle('hidden');
-	};
-	// let preloaderEl = document.getElementById('preloader');
-	// preloaderEl =  preloaderEl.classList.toggle('hidden');
-	setTimeout(delay, 1000);
-  }
-</script> -->
-
   <div id="preloader" class="visible"></div>
 
     <div class="container">
@@ -43,7 +27,7 @@
                 <ul class="nav-list">
                      <li><a href="#welcome-section">About</a></li>
                      <li><a href="#skills">skills</a></li>
-                     <li><a href="#project">works</a></li>
+                     <li><a href="#works">works</a></li>
                      <li><a href="#contact">Contact</a></li>
                  </ul> 
              </nav>            
@@ -64,7 +48,7 @@
         </section>
 
         <section class="skills" id="skills">
-          <div class="skills_wrap wrap">
+          <div class="skills__wrap wrap">
             <div class="skills__left">
               <h2 class="skills__title">My skills</h2>
               <p class="skills__text">
@@ -162,226 +146,100 @@
           </div>
         </section>
 
-        <section class="projects-section" id="project">
-          <div class="slider">
-            <div class="slider__wrapper">
-              <div class="slider__item">
-                <div class="projects__item">
-                   <iframe src="https://adovg.github.io/spa-bootstrap4-bem/" frameborder="0"></iframe>
-                   <ul class="project__list">
-                     <li><i class="fab fa-html5"></i> HTML</li>
-                     <li><i class="fab fa-sass"></i> SCSS</li>
-                     <li><i class="fab fa-js"></i> JavaScript</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li> <a href="https://adovg.github.io/spa-bootstrap4-bem/">Watch now</a></li>
-                   </ul>       
-                 </div>
-              </div>
-              <div class="slider__item">
-                 <div class="projects__item">
-                   <iframe src="https://adovg.github.io/elegance_spa/" frameborder="0"></iframe>
-                   <ul class="project__list">
-                     <li><i class="fab fa-html5"></i> HTML</li>
-                     <li><i class="fab fa-sass"></i> SCSS</li>
-                     <li><i class="fab fa-js"></i> JavaScript</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li> <a href="https://adovg.github.io/elegance_spa/">Watch now</a></li>
-                   </ul>       
-                 </div>
-              </div>
-              <div class="slider__item">
-                <div class="projects__item">
-                   <iframe src="https://adovg.github.io/spa-with-isotope-gallery/" frameborder="0"></iframe>
-                   <ul class="project__list">
-                     <li><i class="fab fa-html5"></i> HTML</li>
-                     <li><i class="fab fa-sass"></i> SCSS</li>
-                     <li><i class="fab fa-js"></i> JavaScript</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li> <a href="https://adovg.github.io/spa-with-isotope-gallery/">Watch now</a></li>
-                   </ul>       
-                 </div>
-              </div>      
-              <div class="slider__item">
-                <div class="projects__item">
-                   <iframe src="https://adovg.github.io/productman/" frameborder="0"></iframe>
-                   <ul class="project__list">
-                     <li><i class="fab fa-html5"></i> HTML</li>
-                     <li><i class="fab fa-sass"></i> SCSS</li>
-                     <li><i class="fab fa-js"></i> JavaScript</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li> <a href="https://adovg.github.io/productman/">Watch now</a></li>
-                   </ul>       
-                 </div>
-              </div>
-              <div class="slider__item">
-                <div class="projects__item">
-                   <iframe src="https://adovg.github.io/productman/" frameborder="0"></iframe>
-                   <ul class="project__list">
-                     <li><i class="fab fa-html5"></i> HTML</li>
-                     <li><i class="fab fa-sass"></i> SCSS</li>
-                     <li><i class="fab fa-js"></i> JavaScript</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li> <a href="https://adovg.github.io/productman/">Watch now</a></li>
-                   </ul>       
-                 </div>
-              </div>
-              <div class="slider__item">
-                <div class="projects__item">
-                   <iframe src="https://adovg.github.io/productman/" frameborder="0"></iframe>
-                   <ul class="project__list">
-                     <li><i class="fab fa-html5"></i> HTML</li>
-                     <li><i class="fab fa-sass"></i> SCSS</li>
-                     <li><i class="fab fa-js"></i> JavaScript</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li> <a href="https://adovg.github.io/productman/">Watch now</a></li>
-                   </ul>       
-                 </div>
+      
+       <section class="works" id="works">
+        <div class="works__wrap">
+          <h2 class="works__title">
+            My works
+          </h2>
+          <p class="works__text">
+            On hover you can see technologies, used in projects
+          </p>
+  
+          <div class="works__carousel carousel owl-carousel owl-theme">
+  
+            <div class="carousel__item">
+              <div class="card">
+                <img class="carousel__img" src="build/img/cli4.png" alt="client logo">
+                <ul class="card__list">
+                  <!-- <li><i class="fab fa-js"></i> Js</li> -->
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/productman/">Watch now</a></li>
+                </ul>
               </div>
             </div>
-            <!-- КНОПКИ "НАЗАД" И "ВПЕРЁД" -->
-            <a class="slider__control slider__control_left" href="#" role="button"></a>
-            <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
-          </div>
-     
-            <h2 class="project-tile">These are some of my projects</h2>
-         
-         <div class="project-container">
-
-          <div class="slider">
-            <div class="slider__wrapper">
-              <div class="slider__item">
-                <div class="projects__item">
-                   <iframe src="https://adovg.github.io/spa-bootstrap4-bem/" frameborder="0"></iframe>
-                   <ul class="project__list">
-                     <li><i class="fab fa-html5"></i> HTML</li>
-                     <li><i class="fab fa-sass"></i> SCSS</li>
-                     <li><i class="fab fa-js"></i> JavaScript</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li> <a href="https://adovg.github.io/spa-bootstrap4-bem/">Watch now</a></li>
-                   </ul>       
-                 </div>
-              </div>
-              <div class="slider__item">
-                 <div class="projects__item">
-                   <iframe src="https://adovg.github.io/elegance_spa/" frameborder="0"></iframe>
-                   <ul class="project__list">
-                     <li><i class="fab fa-html5"></i> HTML</li>
-                     <li><i class="fab fa-sass"></i> SCSS</li>
-                     <li><i class="fab fa-js"></i> JavaScript</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li> <a href="https://adovg.github.io/elegance_spa/">Watch now</a></li>
-                   </ul>       
-                 </div>
-              </div>
-              <div class="slider__item">
-                <div class="projects__item">
-              <iframe src="https://adovg.github.io/provect_test/" frameborder="0"></iframe>
-              <ul class="project__list">
-                <li><i class="fab fa-html5"></i> HTML</li>
-                <li><i class="fab fa-sass"></i> SCSS</li>
-                <li><i class="fab fa-js"></i> JavaScript</li>
-                <li><i class="fab fa-gulp"></i> Gulp</li>
-                <li> <a target="_blank" href="https://adovg.github.io/provect_test/">Watch now</a></li>
-              </ul>       
-            </div>
-              </div>      
-              <div class="slider__item">
-                <div class="projects__item">
-                   <iframe src="https://adovg.github.io/productman/" frameborder="0"></iframe>
-                   <ul class="project__list">
-                     <li><i class="fab fa-html5"></i> HTML</li>
-                     <li><i class="fab fa-sass"></i> SCSS</li>
-                     <li><i class="fab fa-js"></i> JavaScript</li>
-                     <li><i class="fab fa-gulp"></i> Julp</li>
-                     <li> <a href="https://adovg.github.io/productman/">Watch now</a></li>
-                   </ul>       
-                 </div>
+  
+            <div class="carousel__item">
+              <div class="card">
+                <img class="carousel__img" src="build/img/cli2.png" alt="client logo">
+                <ul class="card__list">
+                  <li><i class="fab fa-js"></i> JavaScript</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Laravel Mix</li>
+                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/spa-bootstrap4-bem/">Watch now</a></li>
+                </ul>
               </div>
             </div>
-            <!-- КНОПКИ "НАЗАД" И "ВПЕРЁД" -->
-            <a class="slider__control slider__control_left" href="#" role="button"></a>
-            <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
-          </div>
-
-
-
-
-
-
-
-
-
-            
-            <div class="projects__item">
-              <iframe src="https://adovg.github.io/spa-bootstrap4-bem/" frameborder="0"></iframe>
-              <ul class="project__list">
-                <li><i class="fab fa-html5"></i> HTML</li>
-                <li><i class="fab fa-sass"></i> SCSS</li>
-                <li><i class="fab fa-js"></i> JavaScript</li>
-                <li><i class="fab fa-gulp"></i> Gulp</li>
-                <li> <a target="_blank" href="https://adovg.github.io/spa-bootstrap4-bem/">Watch now</a></li>
-              </ul>       
+  
+            <div class="carousel__item">
+              <div class="card">
+                <img class="carousel__img" src="build/img/cli3.png" alt="client logo">
+                <ul class="card__list">
+                  <li><i class="fab fa-js"></i> JavaScript</li>
+                  <li><i class="fab fa-js"></i> Isotope Gallery</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/spa-with-isotope-gallery/">Watch now</a></li>
+                </ul>
+              </div>
             </div>
-     
-            <div class="projects__item">
-              <iframe src="https://adovg.github.io/elegance_spa/" frameborder="0"></iframe>
-              <ul class="project__list">
-                <li><i class="fab fa-html5"></i> HTML</li>
-                <li><i class="fab fa-sass"></i> SCSS</li>
-                <li><i class="fab fa-js"></i> JavaScript</li>
-                <li><i class="fab fa-js"></i> Isotope Gallery</li>
-                <li><i class="fab fa-gulp"></i> Gulp</li>
-                <li> <a target="_blank" href="https://adovg.github.io/elegance_spa/">Watch now</a></li>
-              </ul>       
-            </div>      
-     
-            <div class="projects__item">
-              <iframe src="https://adovg.github.io/spa-with-isotope-gallery/" frameborder="0"></iframe>
-              <ul class="project__list">
-                <li><i class="fab fa-html5"></i> HTML</li>
-                <li><i class="fab fa-sass"></i> SCSS</li>
-                <li><i class="fab fa-js"></i> JavaScript</li>
-                <li><i class="fab fa-gulp"></i> Gulp</li>
-                <li> <a target="_blank" href="https://adovg.github.io/spa-with-isotope-gallery/">Watch now</a></li>
-              </ul>       
+  
+            <div class="carousel__item">
+              <div class="card">
+                <img class="carousel__img" src="build/img/cli1.png" alt="client logo">
+                <ul class="card__list">
+                  <li><i class="fab fa-js"></i> JavaScript</li>
+                  <li><i class="fab fa-js"></i> jQuery</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/spa-bootstrap4-bem/">Watch now</a></li>
+                </ul>
+              </div>
             </div>
-     
-            <div class="projects__item">
-              <iframe src="https://adovg.github.io/productman/" frameborder="0"></iframe>
-              <ul class="project__list">
-                <li><i class="fab fa-html5"></i> HTML</li>
-                <li><i class="fab fa-sass"></i> SCSS</li>
-                <li><i class="fab fa-gulp"></i> Gulp</li>
-                <li> <a target="_blank" href="https://adovg.github.io/productman/">Watch now</a></li>
-              </ul>       
+  
+            <div class="carousel__item">
+              <div class="card">
+                <img class="carousel__img" src="build/img/cli5.png" alt="client logo">
+                <ul class="card__list">
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li><a class="card__anchor" target="_blank" href="https://adovg.github.io/adaptive__bicycle/">Watch now</a></li>
+                </ul>
+              </div>
             </div>
-           
-            <div class="projects__item">
-              <iframe src="https://adovg.github.io/provect_test/" frameborder="0"></iframe>
-              <ul class="project__list">
-                <li><i class="fab fa-html5"></i> HTML</li>
-                <li><i class="fab fa-sass"></i> SCSS</li>
-                <li><i class="fab fa-js"></i> JavaScript</li>
-                <li><i class="fab fa-gulp"></i> Gulp</li>
-                <li> <a target="_blank" href="https://adovg.github.io/provect_test/">Watch now</a></li>
-              </ul>       
-            </div>
-
-            <div class="projects__item">
-              <iframe src="https://adovg.github.io/adaptive__bicycle/" frameborder="0"></iframe>
-              <ul class="project__list">
-                <li><i class="fab fa-html5"></i> HTML</li>
-                <li><i class="fab fa-sass"></i> SCSS</li>
-                <li><i class="fab fa-js"></i>jQuery</li>
-                <li><i class="fab fa-gulp"></i>Gulp</li>
-                <li> <a target="_blank" href="https://adovg.github.io/adaptive__bicycle/">Watch now</a></li>
-              </ul>       
+   
+            <div class="carousel__item">
+              <div class="card">
+                <img class="carousel__img" src="build/img/cli6.png" alt="client logo">
+                <ul class="card__list">
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li><a class="card__anchor" target="_blank" href="https://adovg.github.io/provect_test/">Watch now</a></li>
+                </ul>
+              </div>
             </div>
             
-         </div>
-       </section>     
+          </div>
+        </div>	
+        
+      </section>
        
        <section class="contact-section" id="contact">
         <h3 class="wow slideInRight">Let's work together :)</h3>
@@ -414,6 +272,7 @@
              new WOW().init();
       </script>
       <script src="build/js/script.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,141 @@
+
+$textColor: #464646;
+
+.works {
+    background-color: #000;
+    background-image: linear-gradient(62deg,#3a3d40 0,#181719 100%);
+}
+
+.works__wrap {
+    padding-top: 55px;
+    padding-bottom: 80px;
+}
+
+.works__title {
+    font-family: 'Raleway';
+    //font-size: 30px;
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 0.93;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white;
+    margin: 25px 0;
+        &::before {
+            display: block;
+            width: 70px;
+            height: 2px;
+            background-color: #2f2f2f;
+            content: '';
+            margin: 0 auto 25px;
+        }
+}
+
+.works__text {
+    font-family: 'Roboto';
+    font-size: 2.5vw;
+    line-height: 1.43;
+    text-align: center;
+    color: $textColor;
+    max-width: 555px;
+    margin: 25px auto;
+  }
+
+  .works__carousel {
+    //  margin: 50px 0;
+      padding-left: 110px;
+      padding-right: 110px;
+      box-sizing: border-box;
+  }
+  .carousel__item {
+       max-height: 400px;
+       max-width: 100%;
+  }
+  
+  .carousel__img {
+    position: relative;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .card {
+    &:hover {
+      .card__list {
+        opacity: 1;
+        z-index: 3;
+        a {
+          color: tomato;
+        }
+      } 
+    
+    }
+  }
+  .card__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    margin: auto 0;
+    color: tomato;
+    background-color:rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vw;
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.3s;
+      li {
+        margin: 5px;
+      }
+      li:last-child {
+        margin: 10px;
+      }
+      i {
+        color: tomato;
+      }
+      .card__anchor {
+        text-transform: uppercase;
+        color: tomato;
+        border: 1px solid tomato;
+      }
+  }
+
+  .card__list:hover {
+    opacity: 1;
+    z-index: 3;
+  } 
+
+  .owl-item {
+    height: 500px;
+  }
+
+.owl-prev {
+background: url('../../build/img/traing-left.png');
+}
+
+.owl-next {
+  top: 50%;
+  background: url('../../build/img/traing-right.png');
+  }
+
+  @media (max-width: 980px) {
+    .clients__carousel {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card__list {
+      font-size: 7vw; 
+    }
+    .works__text {
+      font-size: 5vw;
+    }
+    .works__title {
+      font-size: 7vw;
+    }
+}
+
