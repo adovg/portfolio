@@ -12,7 +12,7 @@ const del = require('del');
 const browserSync = require('browser-sync').create(); 
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
-const imagemin = require('gulp-imagemin');
+//const imagemin = require('gulp-imagemin');
 const svg = require('gulp-svg-sprite');
 /*//Порядок подключения css файлов
 const cssFiles = [
@@ -106,14 +106,14 @@ gulp.task('svg', function () {
         .pipe(gulp.dest('./build/img'));
 });
 
-
-function img() {
-	return gulp.src('./src/img/**')
-	.pipe(imagemin({
-		progressive: true
-	}))
-	.pipe(gulp.dest('./build/img/'))
-}
+//// если что закомитить эту т
+// function img() {
+// 	return gulp.src('./src/img/**')
+// 	// .pipe(imagemin({
+// 	// 	progressive: true
+// 	// }))
+// 	.pipe(gulp.dest('./build/img/'))
+// }
 //Task to watch 
 function watch() {
 	browserSync.init({
@@ -128,7 +128,7 @@ gulp.watch('./src/js/**/*.js', scripts);
 	//wathc HTML
 gulp.watch('./*.html').on('change', browserSync.reload);
 //watch IMG
-gulp.watch('./src/img/**', gulp.series('img'));
+//gulp.watch('./src/img/**', gulp.series('img'));
 };
 
 //Task for clean
@@ -141,6 +141,6 @@ gulp.task('styles', styles);
 gulp.task('scripts', scripts);
 gulp.task('del', clean);
 gulp.task('watch', watch);
-gulp.task('img', imagemin);
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts, img)));
+//gulp.task('img', imagemin);
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts)));
 gulp.task('dev', gulp.series('build', 'watch'));
