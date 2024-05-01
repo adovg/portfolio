@@ -93,18 +93,18 @@ function scripts() {
 // };
 
 
-gulp.task('svg', function () {
-    return gulp.src('./src/img/*.svg') // svg files for sprite
-        .pipe(svg({
-                mode: {
-                    stack: {
-                        sprite: '../sprite.svg'  //sprite file name
-                    }
-                },
-            }
-        ))
-        .pipe(gulp.dest('./build/img'));
-});
+// gulp.task('svg', function () {
+//     return gulp.src('./src/img/*.svg') // svg files for sprite
+//         .pipe(svg({
+//                 mode: {
+//                     stack: {
+//                         sprite: '../sprite.svg'  //sprite file name
+//                     }
+//                 },
+//             }
+//         ))
+//         .pipe(gulp.dest('./build/img'));
+// });
 
 //// если что закомитить эту т
 // function img() {
