@@ -1,7 +1,8 @@
-@import 'reset.scss';
-@import 'mixins.scss';
-@import 'fonts.scss';
-@import 'color.scss';
+@import "./reset.scss";
+@import "./colors.scss";
+@import "./media.scss";
+@import "./fonts/fonts.scss";
+@import "./mixins.scss";
 
 * {
   margin: 0;
@@ -26,6 +27,7 @@ body {
   max-width: 100%;
   min-width: 320px;
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -49,9 +51,10 @@ body {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+
 // preload
 .visible {
   visibility: visible;
@@ -64,6 +67,7 @@ body {
   opacity: 0;
   transition: visibility 0s 2s, opacity 2s linear;
 }
+
 @import 'bloks/header.scss';
 @import 'bloks/welcome.scss';
 @import 'bloks/project-section';

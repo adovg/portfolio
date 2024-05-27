@@ -1,317 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="build/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Document</title>
-    <link rel="shortcut icon" href="build/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/libs/animate.css" />
+    <!-- 
+    <link rel="stylesheet" type="text/css" href="build/css/style.css" /> -->
+  </head>
 
-    <link rel="stylesheet" href="libs/animate.css">
-
-    <link rel="stylesheet" type="text/css" href="build/css/style.css">
-</head>
-
-<body>
-
-  <div id="preloader" class="visible"></div>
+  <body>
+    <div id="preloader" class="visible"></div>
 
     <div class="container">
+      <header class="header wrap">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        <header class="header wrap">
-            <nav class="nav">
-                <ul class="nav-list">
-                     <li><a href="#welcome-section">About</a></li>
-                     <li><a href="#skills">skills</a></li>
-                     <li><a href="#works">works</a></li>
-                     <li><a href="#contact">Contact</a></li>
-                 </ul> 
-             </nav>            
-        </header>
+      <section class="welcome-section" id="welcome-section">
+        <!-- <h1 class="wow slideInUp" data-wow-delay="1s" >Hello, I am Alex</h1> -->
+        <!-- <p class="wow slideInDown">front end developer</p> -->
+        <h1>
+          Hello, I am Oleksii
+          <br />
+          <span
+            style="color: black"
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "Front", "-End", "Developer" ]'
+          ></span>
+        </h1>
+        <!-- <p class="wow slideInleft">front end developer</p> -->
+      </section>
 
-        <section class="welcome-section" id='welcome-section'>
-            <!-- <h1 class="wow slideInUp" data-wow-delay="1s" >Hello, I am Alex</h1> -->
-            <!-- <p class="wow slideInDown">front end developer</p> -->
-            <h1>Hello, I am Oleksii
-              <br>
-              <span
-              style="color:black;"
-                 class="txt-rotate"
-                 data-period="2000"
-                 data-rotate='[ "Front", "-End", "Developer" ]'></span>
-            </h1>
-            <!-- <p class="wow slideInleft">front end developer</p> -->
-        </section>
-
-        <section class="skills" id="skills">
-          <div class="skills__wrap wrap">
-            <div class="skills__left">
-              <h2 class="skills__title">My skills</h2>
-              <p class="skills__text">
-                Approximate level of my knowledge
-              </p>
-              <h3 class="skills__subtitle">Languages</h3>
-              <p class="skills__text">English - intermediate</p>
-              <p class="skills__text">Russian - fluent</p>
-              <p class="skills__text">Ukrainian - fluent</p>
-            </div>
-            <div class="skills__right">
-    
-              <div class="progress skills__progress">
-                <p class="progress__name">Photoshop</p>
-                <div class="progress__element" data-progress-percent='95'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">95%</span></div>
-                </div>				
-              </div>
-    
-              <div class="progress skills__progress">
-                <p class="progress__name">jQuery</p>
-                <div class="progress__element" data-progress-percent='36'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">36%</span></div>
-                </div>				
-              </div>
-    
-              <div class="progress skills__progress">
-                <p class="progress__name">Wordpress</p>
-                <div class="progress__element" data-progress-percent='30'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">30%</span></div>
-                </div>				
-              </div>
-    
-              <div class="progress skills__progress">
-                <p class="progress__name">JavaScript</p>
-                <div class="progress__element" data-progress-percent='72'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">72%</span></div>
-                </div>				
-              </div>
-
-              <div class="progress skills__progress">
-                <p class="progress__name">Git</p>
-                <div class="progress__element" data-progress-percent='60'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">60%</span></div>
-                </div>				
-              </div>
-
-              <div class="progress skills__progress">
-                <p class="progress__name">HTML</p>
-                <div class="progress__element" data-progress-percent='85'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">85%</span></div>
-                </div>				
-              </div>
-
-              <div class="progress skills__progress">
-                <p class="progress__name">CSS/SCSS</p>
-                <div class="progress__element" data-progress-percent='75'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">75%</span></div>
-                </div>				
-              </div>
-
-              <div class="progress skills__progress">
-                <p class="progress__name">BEM methodolofy</p>
-                <div class="progress__element" data-progress-percent='72'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">72%</span></div>
-                </div>				
-              </div>
-
-              <div class="progress skills__progress">
-                <p class="progress__name">Gulp</p>
-                <div class="progress__element" data-progress-percent='65'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">65%</span></div>
-                </div>				
-              </div>
-
-              <div class="progress skills__progress">
-                <p class="progress__name">React - studying now</p>
-                <div class="progress__element" data-progress-percent='10'>
-                  <div class="progress__line">
-                    <span class="progess__tooltip">10%</span></div>
-                </div>				
-              </div>
-
-
-            </div>				
+      <section class="skills" id="skills">
+        <div class="skills__wrap wrap">
+          <div class="skills__left">
+            <h2 class="skills__title">My skills</h2>
+            <p class="skills__text">Approximate level of my knowledge</p>
+            <h3 class="skills__subtitle">Languages</h3>
+            <p class="skills__text">English - intermediate</p>
+            <p class="skills__text">Russian - fluent</p>
+            <p class="skills__text">Ukrainian - fluent</p>
           </div>
-        </section>
+          <div class="skills__right">
+            <div class="progress skills__progress">
+              <p class="progress__name">Photoshop</p>
+              <div class="progress__element" data-progress-percent="95">
+                <div class="progress__line">
+                  <span class="progess__tooltip">95%</span>
+                </div>
+              </div>
+            </div>
 
-      
-       <section class="works" id="works">
+            <div class="progress skills__progress">
+              <p class="progress__name">jQuery</p>
+              <div class="progress__element" data-progress-percent="36">
+                <div class="progress__line">
+                  <span class="progess__tooltip">36%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">Wordpress</p>
+              <div class="progress__element" data-progress-percent="30">
+                <div class="progress__line">
+                  <span class="progess__tooltip">30%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">JavaScript</p>
+              <div class="progress__element" data-progress-percent="72">
+                <div class="progress__line">
+                  <span class="progess__tooltip">72%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">Git</p>
+              <div class="progress__element" data-progress-percent="60">
+                <div class="progress__line">
+                  <span class="progess__tooltip">60%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">HTML</p>
+              <div class="progress__element" data-progress-percent="85">
+                <div class="progress__line">
+                  <span class="progess__tooltip">85%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">CSS/SCSS</p>
+              <div class="progress__element" data-progress-percent="75">
+                <div class="progress__line">
+                  <span class="progess__tooltip">75%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">BEM methodolofy</p>
+              <div class="progress__element" data-progress-percent="72">
+                <div class="progress__line">
+                  <span class="progess__tooltip">72%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">Gulp</p>
+              <div class="progress__element" data-progress-percent="65">
+                <div class="progress__line">
+                  <span class="progess__tooltip">65%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">React - studying now</p>
+              <div class="progress__element" data-progress-percent="10">
+                <div class="progress__line">
+                  <span class="progess__tooltip">10%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works" id="works">
         <div class="works__wrap">
-          <h2 class="works__title">
-            My works
-          </h2>
+          <h2 class="works__title">My works</h2>
           <p class="works__text">
             On hover you can see technologies, used in projects
           </p>
-  
+
           <div class="works__carousel carousel owl-carousel owl-theme">
-
             <div class="carousel__item">
               <div class="card">
-                <img class="carousel__img" src="build/img/cli7.png" alt="client logo">
+                <img
+                  class="carousel__img"
+                  src="./src/img/cli7.png"
+                  alt="client logo"
+                />
                 <ul class="card__list">
                   <li><i class="fab fa-js"></i> Js</li>
                   <li><i class="fab fa-html5"></i> HTML</li>
                   <li><i class="fab fa-sass"></i> SCSS</li>
                   <li><i class="fab fa-gulp"></i> Gulp</li>
-                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/landing-upwork/">Watch now</a></li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/landing-upwork/"
+                      >Watch now</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
 
             <div class="carousel__item">
               <div class="card">
-                <img class="carousel__img" src="build/img/cli8.png" alt="client logo">
+                <img
+                  class="carousel__img"
+                  src="./src/img/cli8.png"
+                  alt="client logo"
+                />
                 <ul class="card__list">
                   <li><i class="fab fa-html5"></i> HTML</li>
                   <li><i class="fab fa-sass"></i> SCSS</li>
                   <li><i class="fab fa-gulp"></i> Gulp</li>
-                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/landing-upwork-2/">Watch now</a></li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/landing-upwork-2/"
+                      >Watch now</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
 
             <div class="carousel__item">
               <div class="card">
-                <img class="carousel__img" src="build/img/cli9.png" alt="client logo">
+                <img
+                  class="carousel__img"
+                  src="./src/img/cli9.png"
+                  alt="client logo"
+                />
                 <ul class="card__list">
                   <li><i class="fab fa-js"></i> Js</li>
                   <li><i class="fab fa-html5"></i> HTML</li>
                   <li><i class="fab fa-sass"></i> SCSS</li>
                   <li><i class="fab fa-gulp"></i> Gulp</li>
-                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/estate-spa/">Watch now</a></li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/estate-spa/"
+                      >Watch now</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
-            
-  
+
             <div class="carousel__item">
               <div class="card">
-                <img class="carousel__img" src="build/img/cli4.png" alt="client logo">
+                <img
+                  class="carousel__img"
+                  src="./src/img/cli4.png"
+                  alt="client logo"
+                />
                 <ul class="card__list">
                   <!-- <li><i class="fab fa-js"></i> Js</li> -->
                   <li><i class="fab fa-html5"></i> HTML</li>
                   <li><i class="fab fa-sass"></i> SCSS</li>
                   <li><i class="fab fa-gulp"></i> Gulp</li>
-                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/productman/">Watch now</a></li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/productman/"
+                      >Watch now</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
-  
+
             <div class="carousel__item">
               <div class="card">
-                <img class="carousel__img" src="build/img/cli2.png" alt="client logo">
+                <img
+                  class="carousel__img"
+                  src="./src/img/cli2.png"
+                  alt="client logo"
+                />
                 <ul class="card__list">
                   <li><i class="fab fa-js"></i> JavaScript</li>
                   <li><i class="fab fa-html5"></i> HTML</li>
                   <li><i class="fab fa-sass"></i> SCSS</li>
                   <li><i class="fab fa-gulp"></i> Laravel Mix</li>
-                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/spa-bootstrap4-bem/">Watch now</a></li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/spa-bootstrap4-bem/"
+                      >Watch now</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
-  
+
             <div class="carousel__item">
               <div class="card">
-                <img class="carousel__img" src="build/img/cli3.png" alt="client logo">
+                <img
+                  class="carousel__img"
+                  src="./src/img/cli3.png"
+                  alt="client logo"
+                />
                 <ul class="card__list">
                   <li><i class="fab fa-js"></i> JavaScript</li>
                   <li><i class="fab fa-js"></i> Isotope Gallery</li>
                   <li><i class="fab fa-html5"></i> HTML</li>
                   <li><i class="fab fa-sass"></i> SCSS</li>
                   <li><i class="fab fa-gulp"></i> Gulp</li>
-                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/spa-with-isotope-gallery/">Watch now</a></li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/spa-with-isotope-gallery/"
+                      >Watch now</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
-  
+
             <div class="carousel__item">
               <div class="card">
-                <img class="carousel__img" src="build/img/cli1.png" alt="client logo">
+                <img
+                  class="carousel__img"
+                  src="./src/img/cli1.png"
+                  alt="client logo"
+                />
                 <ul class="card__list">
                   <li><i class="fab fa-js"></i> JavaScript</li>
                   <li><i class="fab fa-js"></i> jQuery</li>
                   <li><i class="fab fa-html5"></i> HTML</li>
                   <li><i class="fab fa-sass"></i> SCSS</li>
                   <li><i class="fab fa-gulp"></i> Gulp</li>
-                  <li><a target="blank" class="card__anchor" href="https://adovg.github.io/spa-bootstrap4-bem/">Watch now</a></li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/spa-bootstrap4-bem/"
+                      >Watch now</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
-  
+
             <div class="carousel__item">
               <div class="card">
-                <img class="carousel__img" src="build/img/cli5.png" alt="client logo">
+                <img
+                  class="carousel__img"
+                  src="./src/img/cli5.png"
+                  alt="client logo"
+                />
                 <ul class="card__list">
                   <li><i class="fab fa-html5"></i> HTML</li>
                   <li><i class="fab fa-sass"></i> SCSS</li>
                   <li><i class="fab fa-gulp"></i> Gulp</li>
-                  <li><a class="card__anchor" target="_blank" href="https://adovg.github.io/adaptive__bicycle/">Watch now</a></li>
+                  <li>
+                    <a
+                      class="card__anchor"
+                      target="_blank"
+                      href="https://adovg.github.io/adaptive__bicycle/"
+                      >Watch now</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
-   
+
             <div class="carousel__item">
               <div class="card">
-                <img class="carousel__img" src="build/img/cli6.png" alt="client logo">
+                <img
+                  class="carousel__img"
+                  src="./src/img/cli6.png"
+                  alt="client logo"
+                />
                 <ul class="card__list">
                   <li><i class="fab fa-html5"></i> HTML</li>
                   <li><i class="fab fa-sass"></i> SCSS</li>
                   <li><i class="fab fa-gulp"></i> Gulp</li>
-                  <li><a class="card__anchor" target="_blank" href="https://adovg.github.io/provect_test/">Watch now</a></li>
+                  <li>
+                    <a
+                      class="card__anchor"
+                      target="_blank"
+                      href="https://adovg.github.io/provect_test/"
+                      >Watch now</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
-            
           </div>
-        </div>	
-        
+        </div>
       </section>
-       
-       <section class="contact-section" id="contact">
+
+      <section class="contact-section" id="contact">
         <h3 class="wow slideInRight">Let's work together :)</h3>
-        
+
         <div class="contact-links">
-    
-        <a
-          id="profile-link"
-          href="https://github.com/adovg/"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a>
-     
-        <a href="mailto:oleksiidovgalenko@gmail.com" class="btn contact-details">
-          <i class="fas fa-at"></i>  Send a mail</a>
-        <a href="skype:oleksiidovgalenko?call" class="btn contact-details">
-          <i class="fas fa-mobile-alt"></i> Call me</a>
-      </div>
+          <a
+            id="profile-link"
+            href="https://github.com/adovg/"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+
+          <a
+            href="mailto:oleksiidovgalenko@gmail.com"
+            class="btn contact-details"
+          >
+            <i class="fas fa-at"></i> Send a mail</a
+          >
+          <a href="skype:oleksiidovgalenko?call" class="btn contact-details">
+            <i class="fas fa-mobile-alt"></i> Call me</a
+          >
+        </div>
       </section>
-
-    </div>            
+    </div>
     <footer class="footer">
-        <div class="line"></div>
-        <p>All rights reserved</p>
-      </footer>
+      <div class="line"></div>
+      <p>All rights reserved</p>
+    </footer>
 
-      <script src="libs/jquery.js"></script>
-      <script src="libs/wow.min.js"></script>
-      <script>
-             new WOW().init();
-      </script>
-      <script src="build/js/script.js"></script>
-
-</body>
-
+    <script type="module" src="./src/main.js"></script>
+    <script src="./src/libs/jquery.js"></script>
+    <script src="./src/libs/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- <script type="module" src="./src/main.js"></script> -->
+  </body>
 </html>
