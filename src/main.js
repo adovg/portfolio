@@ -1,10 +1,5 @@
 import "../src/styles/styles.scss";
 
-//import "../libs/jquery.js";
-//import "../libs/wow.min.js";
-import "./lib.js";
-import "./owl.carousel.js";
-
 $(document).ready(function () {
   $(".works__btn button, .works__btn a").on("focus", function () {
     $(this).parents(".works__element").addClass("works__element--active");
