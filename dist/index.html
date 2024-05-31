@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABmFBMVEUAAADUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJibUJib///9cVRyMAAAAhnRSTlMAABKMoqEV1AzEBbMBoK5eYHmLZVH7siia4ED1wws18DDt0hQn5yLjHw5kc3Jxhe8X1uosK8fzOwe3/KiGiFdN+gKk7uGYkRkbl4F1fYd3a4lpmS/MyZMqnlapNjQQsUT3yjHRM/3pv0sdBE7C/iXl+Nus3fnZDbWK7OtopvbXo2ZIg4BFA9pfEL0AAAABYktHRIf72QvLAAAAB3RJTUUH4AQQEQslyh2EtgAAAcVJREFUOMuNk/lfEmEQxh0OhXVBTTHvMEvFAxQVjzBDTbCssLzw1sD7VrC7NH3+7obPu7u82H6s55d3n5nvO5+Znd2Cgn+L7pEALFab3UQ2q0UDCotgqqJCDXA4zQGnQwOUYnOgWNEA1WUOuFQNICs7d0mppBI3h6z6FFTG7oHmpDtlBlAu6klS7Rwq1+9QhQeoVOhhld2lyVYNeCr0mlRTC9TVU8OjvB5rawzA2wg8bqInT/OARq8BNLcA1a3ka2vvEOr0B4CWZgPo6gaCPfIUvUGgu8sAfH1AqN+wrP4Q0OczIgODwNCz8HDYn9Xwc5VGXgCDAwYQGeWexsbHQ6K7l0SlfIxGcjUn2IejsUkBvCJ6zccE5YAp9m+I3grgHVGcj6ncy6dp9u+JPkzOBMZm5+aJFjgwnRuLEkPAYoRXYFlaXuGlKKvcdUIC1taBjc16UZPI0fARWF+TgCS/uNTWtn9nd09p3Y8fBA+BQFICjo5FeyenZ+7zC/F8fCQB0fTfH1w6KgGZS8/dvOcyIwFqbP+T8/Ohnkx9OYiPxFRpe9nWM5tfv6V5mu8/fv7yZigvqzN7savr3zfRW7OstOr/+N9l/QFU8cZNMw7WwgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0wNC0xNlQxNzoxMTozNyswMjowMBrGCDwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMDQtMTZUMTc6MTE6MzcrMDI6MDBrm7CAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" crossorigin src="./assets/index-db920791.js"></script>
+    <link rel="stylesheet" href="./assets/index-32c15469.css">
+  </head>
+
+  <body>
+    <div id="preloader" class="visible"></div>
+
+    <div class="container">
+      <header class="header wrap">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="welcome-section" id="welcome-section">
+        <!-- <h1 class="wow slideInUp" data-wow-delay="1s" >Hello, I am Alex</h1> -->
+        <!-- <p class="wow slideInDown">front end developer</p> -->
+        <h1>
+          Hello, I am Oleksii
+          <br />
+          <span
+            style="color: black"
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "Front", "-End", "Developer" ]'
+          ></span>
+        </h1>
+        <!-- <p class="wow slideInleft">front end developer</p> -->
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="skills__wrap wrap">
+          <div class="skills__left">
+            <h2 class="skills__title">My skills</h2>
+            <p class="skills__text">Approximate level of my knowledge</p>
+            <h3 class="skills__subtitle">Languages</h3>
+            <p class="skills__text">English - intermediate</p>
+            <p class="skills__text">Russian - fluent</p>
+            <p class="skills__text">Ukrainian - fluent</p>
+          </div>
+          <div class="skills__right">
+            <div class="progress skills__progress">
+              <p class="progress__name">Photoshop</p>
+              <div class="progress__element" data-progress-percent="95">
+                <div class="progress__line">
+                  <span class="progess__tooltip">95%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">jQuery</p>
+              <div class="progress__element" data-progress-percent="36">
+                <div class="progress__line">
+                  <span class="progess__tooltip">36%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">Wordpress</p>
+              <div class="progress__element" data-progress-percent="30">
+                <div class="progress__line">
+                  <span class="progess__tooltip">30%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">JavaScript</p>
+              <div class="progress__element" data-progress-percent="72">
+                <div class="progress__line">
+                  <span class="progess__tooltip">72%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">Git</p>
+              <div class="progress__element" data-progress-percent="60">
+                <div class="progress__line">
+                  <span class="progess__tooltip">60%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">HTML</p>
+              <div class="progress__element" data-progress-percent="85">
+                <div class="progress__line">
+                  <span class="progess__tooltip">85%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">CSS/SCSS</p>
+              <div class="progress__element" data-progress-percent="75">
+                <div class="progress__line">
+                  <span class="progess__tooltip">75%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">BEM methodolofy</p>
+              <div class="progress__element" data-progress-percent="72">
+                <div class="progress__line">
+                  <span class="progess__tooltip">72%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">Gulp</p>
+              <div class="progress__element" data-progress-percent="65">
+                <div class="progress__line">
+                  <span class="progess__tooltip">65%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress skills__progress">
+              <p class="progress__name">React - studying now</p>
+              <div class="progress__element" data-progress-percent="10">
+                <div class="progress__line">
+                  <span class="progess__tooltip">10%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="works__wrap">
+          <h2 class="works__title">My works</h2>
+          <p class="works__text">
+            On hover you can see technologies, used in projects
+          </p>
+
+          <div class="works__carousel carousel owl-carousel owl-theme">
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli11-9a570e42.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/spa-crypto-labs/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli10-f573fc0b.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-js"></i> Js</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/tea-club-spa/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli7-a1c6712d.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-js"></i> Js</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/landing-upwork/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli8-56224177.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/landing-upwork-2/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli9-1e8dc8b6.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-js"></i> Js</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/estate-spa/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli4-a341fad2.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/productman/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli2-164dfd82.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-js"></i> JavaScript</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Laravel Mix</li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/spa-bootstrap4-bem/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli3-63d79499.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-js"></i> JavaScript</li>
+                  <li><i class="fab fa-js"></i> Isotope Gallery</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/spa-with-isotope-gallery/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli1-84a8a488.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-js"></i> JavaScript</li>
+                  <li><i class="fab fa-js"></i> jQuery</li>
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li>
+                    <a
+                      target="blank"
+                      class="card__anchor"
+                      href="https://adovg.github.io/spa-bootstrap4-bem/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli5-55e18fa7.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li>
+                    <a
+                      class="card__anchor"
+                      target="_blank"
+                      href="https://adovg.github.io/adaptive__bicycle/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="carousel__item">
+              <div class="card">
+                <img
+                  class="carousel__img"
+                  src="./assets/cli6-fdc84472.png"
+                  alt="client logo"
+                />
+                <ul class="card__list">
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-sass"></i> SCSS</li>
+                  <li><i class="fab fa-gulp"></i> Gulp</li>
+                  <li>
+                    <a
+                      class="card__anchor"
+                      target="_blank"
+                      href="https://adovg.github.io/provect_test/"
+                      >Watch now</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <h3 class="wow slideInRight">Let's work together :)</h3>
+
+        <div class="contact-links">
+          <a
+            id="profile-link"
+            href="https://github.com/adovg/"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+
+          <a
+            href="mailto:oleksiidovgalenko@gmail.com"
+            class="btn contact-details"
+          >
+            <i class="fas fa-at"></i> Send a mail</a
+          >
+          <a href="skype:oleksiidovgalenko?call" class="btn contact-details">
+            <i class="fas fa-mobile-alt"></i> Call me</a
+          >
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="line"></div>
+      <p>All rights reserved</p>
+    </footer>
+
+    
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
