@@ -12,7 +12,6 @@ $textColor: #464646;
 
 .works__title {
   font-family: 'Raleway';
-  //font-size: 30px;
   font-size: 3vw;
   font-weight: bold;
   line-height: 0.93;
@@ -38,11 +37,10 @@ $textColor: #464646;
   text-align: center;
   color: $textColor;
   max-width: 555px;
-  margin: 25px auto;
+  margin: 50px auto;
 }
 
 .works__carousel {
-  //  margin: 50px 0;
   padding-left: 110px;
   padding-right: 110px;
   box-sizing: border-box;
