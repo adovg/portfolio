@@ -1,0 +1,80 @@
+@import "./reset.scss";
+@import "./colors.scss";
+@import "./media.scss";
+@import "./fonts/fonts.scss";
+@import "./mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.container {
+  max-width: 100%;
+  min-width: 320px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1024px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+// preload
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+@import 'bloks/header.scss';
+@import 'bloks/welcome.scss';
+@import 'bloks/project-section';
+@import 'bloks/works.scss';
+@import 'bloks/carousel/owl.carousel';
+@import 'bloks/carousel/owl.theme.default';
+@import 'bloks/contact-section';
+@import 'bloks/skills';
+
+@import 'bloks/footer.scss';

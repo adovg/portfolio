@@ -1,0 +1,53 @@
+.accordion {
+  .tab {
+    background-color: #fff;
+    position: relative;
+    margin: 10px 10px;
+    .tab__content {
+      position: relative;
+      background: white;
+      height: 0;
+      overflow: hidden;
+      font-size: 20px;
+      text-align: justify;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+  }
+  .tab__label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    &-plus {
+      &::before {
+        content: "+";
+        color: black;
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        font-size: 30px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .tab__active {
+    .tab__content {
+      height: 100%;
+      max-height: auto;
+      overflow: visible;
+      transition: 0.5s;
+    }
+    .tab__label-plus::before {
+      content: "-";
+      font-size: 30px;
+    }
+  }
+}
+
+.tab__label-noplus {
+  &::before {
+    content: none;
+  }
+}

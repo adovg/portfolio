@@ -1,1 +1,1 @@
-# portfolio
+yarn install => yarn dev => yarn build
