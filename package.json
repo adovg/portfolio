@@ -1,25 +1,17 @@
 {
-  "name": "gulp_second_version",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "front-end-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.5",
-    "del": "^4.1.1",
-    "gulp": "^5.0.0",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^9.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-svg-sprite": "^1.5.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-uglify-es": "^3.0.0"
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "sass": "^1.62.1"
   }
 }
